@@ -1,1 +1,61 @@
-<h1>test Silvia love</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti, Silvia 💖</title>
+    <style>
+        body {
+            background: url('https://i.imgur.com/f7SCDdT.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            color: white;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        #message {
+            font-size: 1.5em;
+            border-right: 2px solid white;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .heart {
+            position: absolute;
+            color: red;
+            font-size: 24px;
+            animation: float 5s infinite ease-in-out;
+        }
+        @keyframes float {
+            0% { transform: translateY(100vh) scale(1); opacity: 1; }
+            100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌹 Para Ti, Silvia 🌹</h1>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        // Animación de escritura
+        const text = "Eres lo mejor que me ha pasado, te amo con todo mi corazón ❤️";
+        let index = 0;
+        function typeMessage() {
+            if (index < text.length) {
+                document.getElementById("message").textContent += text.charAt(index);
+                index++;
+                setTimeout(type
+
